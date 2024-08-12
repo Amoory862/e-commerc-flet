@@ -1,0 +1,16 @@
+flet
+platform
+socket
+webbrowser
+asyncio
+datetime
+locale
+babel.numbers
+firebase_admin
+typing
+requests
+json
+os
+logging
+re
+
