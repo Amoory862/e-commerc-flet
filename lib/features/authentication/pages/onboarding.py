@@ -15,8 +15,7 @@ class OnBoardingScreen(ft.UserControl):
     def build(self):
         return ft.UserControl(
             controls=[
-                ft.Stack(
-                    [
+
                         ft.ListView(
                             [
                             OnBoardingPage(
@@ -46,8 +45,8 @@ class OnBoardingScreen(ft.UserControl):
                             spacing=2,
 
                         )
-                    ],
-                )
+                    
+                
             ],
             height=THelperFunctions.screen_height(self.page),
             width=THelperFunctions.screen_width(self.page),
@@ -75,6 +74,8 @@ class OnBoardingPage(ft.UserControl):
                         self.title,
                         style=current_theme.text_theme.headline_medium,
                         text_align=ft.TextAlign.CENTER,
+                        width=THelperFunctions.screen_width(self.page)*0.85, 
+                        #height=THelperFunctions.screen_height(self.page) 
                         
                     ),
                     ft.Text(height=TSizes.space_btw_items),  
@@ -82,14 +83,15 @@ class OnBoardingPage(ft.UserControl):
                         self.subtitle,
                         style=current_theme.text_theme.body_medium,
                         text_align=ft.TextAlign.CENTER,
-                        width=THelperFunctions.screen_width(self.page)*0.7,
-                        height=THelperFunctions.screen_height(self.page) 
+                        width=THelperFunctions.screen_width(self.page)*0.8,
+                        # height=THelperFunctions.screen_height(self.page) 
                     ),
                     
             ],
             
         ),
-        padding=ft.padding.all(TSizes.default_space)  # Add padding here
+        padding=ft.padding.all(TSizes.default_space),  # Add padding here
+        alignment=ft.alignment.center,
     )
                 
                 
