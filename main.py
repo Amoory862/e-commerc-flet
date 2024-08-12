@@ -11,7 +11,7 @@ from lib.features.authentication.pages.onboarding import OnBoardingScreen
 #  TODO  add signup page 17.12               #
 #  TODO  add email vervication screen 16.38  #
 #  TODO  add forgot password screen 10.19    # 
-#  TODO  add navigation bar 15.45            #
+#  TODO  add navigation bar 15.45            # 
 #  TODO  clip path 27.49                     #
 #  TODO  cistom appbar 17.06                 #
 #  TODO  add search bar and list view 28.29  #
@@ -25,7 +25,7 @@ class App:
         page.title = TTexts.appName
         page.window.width = 480
         page.window.height = 1000
-        page.window.left = 1435
+        page.window.left = 1437 
         page.update()
         # Create an instance of AppTheme
         theme_provider = AppTheme()
@@ -74,5 +74,5 @@ class App:
 
 
 # Run the application
-if '__main__'==__name__:
-    ft.app(target=App.main)
+# if '__main__'==__name__:
+ft.app(target=App.main)
