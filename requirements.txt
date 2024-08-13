@@ -1,4 +1,2 @@
 flet==0.24.0.dev3216
-firebase_admin
 requests
-babel
