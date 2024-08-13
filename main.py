@@ -3,7 +3,7 @@ from lib.utils.theme.theme import AppTheme
 from lib.utils.constants.text_strings import TTexts
 from lib.splach_screen import SplashScreen 
 from lib.utils.helpers.get_theme_from_device import ThemeProviderCustom 
-from lib.features.authentication.pages.onboarding import OnBoardingScreen 
+from lib.features.authentication.pages.onboading.onboarding import OnBoardingScreen 
 #--------------------------------------------# 
 #  TODO  add splach scren [done]             #    
 #  TODO  add onboarding screen  23.42        #   

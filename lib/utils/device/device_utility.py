@@ -51,8 +51,18 @@ class TDeviceUtils:
         return 56  # Standard height in most UIs
 
     @staticmethod
-    def get_app_bar_height():
-        return 56  # Standard height for AppBar
+    def get_app_bar_height(page):
+        # Get the height of the page and calculate a dynamic height for the AppBar
+        window_height = page.window.height
+        window_width = page.window.width
+
+        # Example calculation: Adjust height based on the window size and device orientation
+        if window_width > window_height:
+            # Landscape mode
+            return window_height * 0.15  # 15% of the window height
+        else:
+            # Portrait mode
+            return window_height * 0.005  # 0.5% of the window height
 
     @staticmethod
     def get_keyboard_height(page):
