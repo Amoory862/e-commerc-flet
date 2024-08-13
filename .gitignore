@@ -2,4 +2,9 @@
 /test
 
 #ignore all.pyc files in any folder
-*.pyc
+
+# Python temp files
+__pycache__/
+*.py[cod]
+*$py.class
+* .pyc
